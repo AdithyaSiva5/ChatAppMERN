@@ -8,7 +8,8 @@
         const [id,setId] = useState(null)
         useEffect(() =>{
             axios.get('/profile').then(responce =>{
-
+                setId(responce.data.userId)
+                setUsername(responce.data.username)
             })
         },[])
         return (

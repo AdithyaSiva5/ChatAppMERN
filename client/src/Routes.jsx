@@ -6,7 +6,7 @@ export default function Routes(){
     const {username  } = useContext(UserContext)
 
     if(username){
-        return 'Logged In'
+        return 'Logged In' + username
     }
     return (
         <Register/>
